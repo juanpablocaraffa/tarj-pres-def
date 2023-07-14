@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juan Pablo Caraffa</title>
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body id="body" class="theme--dark">
+        <input type="checkbox" id="menu">
+        <input type="checkbox" id="night">
+        <div id="container">
+            <div class="header">
+                <label for="night" class="night-mode" onclick="enableNight()">
+                    <i class="fa-solid fa-moon"></i>
+                </label>
+            </div>
+            <section class="left-section">
+                <img src="assets/img/perfil.jpg" alt="" class="profile-pic">
+                <div class="profile-details">
+                    <span class="profile-maps">
+                        <i class="fa-solid fa-location-dot"></i> Santa Fe, Argentina
+                    </span>
+                    <p class="profile-name">Juan Pablo Caraffa</p>
+                    <span class="profile-summary">Desarrollador web</span>
+                    <a href="#" class="profile-cv">Tarjetas personales online a partir de $8500!</a>
+                </div>
+                <div class="profile-pils">
+                    <span class="pils"><a target="_blank" href="https://www.instagram.com/juampaac/"><i class="fa-brands fa-instagram"></i></a></span>
+                    <span class="pils"><a target="_blank" href="mailto:caraffa155@gmail.com"><i class="fa-regular fa-envelope"></i></a></span>
+                <!--  <span class="pils"><a href="#"><i class="fa-brands fa-dribbble"></i> Dribble</a></span> -->
+                    <span class="pils"><a target="_blank" href="https://api.whatsapp.com/send?phone=3425454402"><i class="fa-brands fa-whatsapp"></i></a></span>
+                </div>
+            </section>
+            <div class="front-smooth"></div>
+        </div>
+        <script>
+            let enableNight = () => {
+                var body = document.getElementById("body");
+                if (body.classList.contains('theme--light')) {
+                    body.classList.remove('theme--light');
+                    body.classList.add('theme--dark');
+                } else {
+                    body.classList.remove('theme--dark');
+                    body.classList.add('theme--light');
+                }
+            }
+        </script>
+    </body>
+</html>
