@@ -81,6 +81,13 @@ html, body {
   z-index: 50;
 }
 
+.header a img{
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
 #container .header .night-mode {
   position: absolute;
   right: 0;
@@ -285,8 +292,12 @@ html, body {
   
 }
 
+
 #container .left-section .profile-details .profile-maps {
   transform: translateY(-15px);
+}
+#container .left-section .profile-details .profile-cv{
+  margin-top: 55px;
 }
   }
 
