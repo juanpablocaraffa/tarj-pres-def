@@ -81,11 +81,21 @@ html, body {
   z-index: 50;
 }
 
+.traduc-container{
+  display: flex;
+  align-items: center;
+}
+.header a{
+  height: auto;
+  width:  auto;
+}
 .header a img{
   margin: 5px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
+  
+  
 }
 
 #container .header .night-mode {
